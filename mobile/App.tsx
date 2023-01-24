@@ -10,6 +10,7 @@ import {
 import './src/lib/dayjs';
 import { Loading } from './src/components/Loading';
 import { Home } from './src/screens/Home';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,7 +28,8 @@ export default function App() {
 
   return (
     <>
-      <Home />
+      {/* <Home /> */}
+      <Routes />
       <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
     </>
   );
